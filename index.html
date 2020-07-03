@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+			<title>Masmédulab</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+			<link type="text/css" rel="stylesheet" href="main.css">
+	</head>
+	<body>
+			<h2 id="quick-start">Primeros ejemplos con texto</h2>
+			<script type="text/p5" data-height="600" data-autoplay data-preview-width="800">
+function setup(){
+	createCanvas(300, 300);
+	background(255);
+	fill(0);
+	textSize(20);
+	text("Las",100,140);
+	text("palabras",100,170);
+	text("son estatuas",100,200);	
+}
+
+function draw(){
+
+}
+			</script>
+			<script type="text/p5" data-height="600" data-autoplay data-preview-width="800">
+function setup(){
+	createCanvas(500, 500);
+	background(255);
+	fill(0);
+	textSize(20);
+}
+
+function draw(){
+	text("Las",mouseX,mouseY);
+	text("palabras",mouseX,30+mouseY);
+	text("pintan",mouseX,60+mouseY);	
+}
+			</script>
+			<script type="text/p5" data-height="600" data-autoplay data-preview-width="800">
+function setup(){
+	createCanvas(500, 500);
+	fill(0);
+	textSize(20);
+}
+
+function draw(){
+	background(255);
+	text("Las",mouseX,mouseY);
+	text("palabras",mouseX,30+mouseY);
+	text("nos persiguen",mouseX,60+mouseY);	
+}
+			</script>
+			<script type="text/p5" data-height="600" data-autoplay data-preview-width="800">
+function setup(){
+	createCanvas(500, 500);
+	fill(0);
+	textSize(20);
+	frameRate(3);
+}
+
+function draw(){
+	background(255);
+	text("Las",random(500),random(500));
+	text("palabras",random(500),random(500));
+	text("aparecen y desaparecen",random(500),random(500));	
+}
+			</script>
+			<script type="text/p5" data-height="600" data-autoplay data-preview-width="800">
+function setup(){
+	createCanvas(100, 100);
+}
+
+function draw(){
+	background(255, 0, 200);
+}
+			</script>
+			<script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+	</body>
+</html>
